@@ -9,12 +9,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/ionicons.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/flaticon.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/ss/animate.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css"> 
+    <link rel="stylesheet" href="/css/flaticon.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="goto-here">
 
@@ -351,14 +352,14 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-  <script src="{{ asset('js/jquery.min.js') }}"></script>
-  <script src="{{ asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
-  <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
-  <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
-  <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-  <script src="{{ asset('js/aos.js') }}"></script>
-  <script src="{{ asset('js/scrollax.min.js') }}"></script>
-  <script src="{{ asset('js/main.js') }}"></script>
-  <script src="{{ asset('js/app.js') }}" defer></script>
+  <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
+  <script src="{{ URL::asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ URL::asset('js/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ URL::asset('js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ URL::asset('js/owl.carousel.min.js') }}"></script>
+  <script src="{{ URL::asset('js/aos.js') }}"></script>
+  <script src="{{ URL::asset('js/scrollax.min.js') }}"></script>
+  <script src="{{ URL::asset('js/main.js') }}"></script>
+  <script src="{{ URL::asset('js/app.js') }}" defer></script>
   </body>
 </html>
