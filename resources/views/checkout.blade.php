@@ -72,14 +72,22 @@
                                         <td class="total">${{ $cart->total }}</td>
                                     </tr>
                             @endforeach
-                            
+                            <tr class="text-center">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><p class="d-flex total-price">
+		    						<span>Total</span>
+		    						<span>$17.60</span>
+		    					</p></td>
+                            </tr>
                             </tbody>
                           </table>
                       </div>
                 </div>
             </div>
             </div>
-            <p align="center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
         </section>
   
         <section class="ftco-section">
