@@ -134,7 +134,7 @@
 	                    </div>
                     </div>
                     <div class="w-100"></div>
-                        <button type="submit" class="btn btn-primary py-3 px-4">Proceed to Checkout</button>
+                        <button type="submit" class="btn btn-primary py-3 px-4">Place Order</button>
                     </div>
             </form>
         </div>
