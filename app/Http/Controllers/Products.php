@@ -62,7 +62,7 @@ class Products extends Controller
     {
         $cart[] = [1,2];
         session([ "data" => "val"]);
-        return $product;
+        return session("data");
     }
 
     /**
