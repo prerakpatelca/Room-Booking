@@ -100,8 +100,6 @@
                               </tr>
                             </thead>
                             <tbody>
-
-                            @foreach($carts as $cart)
                                 <tr class="text-center">
                                     <td class="product-remove">
                                         <i class="fas fa-times"></i>
@@ -122,7 +120,6 @@
                                 </td>       
                                     <td class="total"></td>
                                 </tr>
-                            @endforeach
 
                               <tr class="text-center">
                                 <td class="product-remove"><a href="#"><i class="fas fa-times"></i></a></td>
