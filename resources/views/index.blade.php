@@ -71,7 +71,7 @@
                                         <span><i class="ion-ios-cart"></i></span>
                                     </a>
                                     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-                                        <span>-</i> </span>
+                                        <span>-</span>
                                     </a>
                                     <a href="#" class="heart d-flex justify-content-center align-items-center ">
                                         <span><i class="fas fa-shopping-cart"></i></span>
