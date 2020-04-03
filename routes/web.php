@@ -18,6 +18,7 @@ Route::get('/', 'Products@index');
 Route::get('set/{value}/{value2}', function($value,$value2){
     session(["key" => $value,"anotherkey" => $value2]);
     echo "Setting session key to ". $value . " and " . $value2;
+    echo session("key") . session("anotherkey");
 });
 
 Route::get('get',function(){
