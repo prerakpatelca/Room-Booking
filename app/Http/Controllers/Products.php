@@ -25,7 +25,7 @@ class Products extends Controller
     public function index()
     {
         $products = Product::get();
-        $cart = session('carts');
+        $cart = session('cart');
         return view('index',['products' => $products, 'carts' => $cart]);
     }
 
@@ -36,6 +36,8 @@ class Products extends Controller
      */
     public function create()
     {
+        $emptyCart = [];
+        session(['cart' => $emptyCart ]);
     }
 
     /**
@@ -68,10 +70,10 @@ class Products extends Controller
      */
     public function edit(Product $product)
     {
-        $productsCart = session('carts');
+        $productsCart = session('cart');
         array_push($productsCart,$product);
-        session(['carts' => $productsCart]);
-        return session('carts');
+        session(['cart' => $productsCart]);
+        return session('cart');
     }
 
     /**
