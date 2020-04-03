@@ -72,14 +72,6 @@
                                         <td class="total">${{ $cart->total }}</td>
                                     </tr>
                             @endforeach
-                            <tr class="text-center">
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><span style=" font-weight: bold;">Total</span>
-		    						<span style=" font-weight: bold;">$17.60</span></td>
-                            </tr>
                             </tbody>
                           </table>
                       </div>
@@ -151,7 +143,7 @@
 		    						<span>Total</span>
 		    						<span>$17.60</span>
 		    					</p>
-								</div>
+							
 	          	</div>
 	          </div>
           </div>
