@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="cart-detail cart-total p-3 p-md-4">
-	        <h3 class="billing-heading mb-4">Cart Total</h3>
+	            <h3 class="billing-heading mb-4">Cart Total</h3>
 	          	<p class="d-flex">
                     <span>Subtotal</span>
                     <span>$20.60</span>
@@ -97,15 +97,7 @@
                     <span>$17.60</span>
                 </p>
 		    </div>
-        </div>
-    </section>
-  
-        <section class="ftco-section">
-      <div class="container">
-        
-        <div class="row justify-content-center">
-            <div class="col-xl-12 ftco-animate">
-				<form action="#" class="billing-form">
+            <form action="#" class="billing-form">
 							<h3 class="mb-4 billing-heading">Billing Details</h3>
 	          	<div class="row align-items-end">
 	          		<div class="col-md-6">
@@ -140,7 +132,16 @@
 	                  <input type="text" class="form-control" placeholder="">
 	                </div>
                 </div>
-	            </form>
+            </form>
+        </div>
+    </section>
+  
+        <section class="ftco-section">
+      <div class="container">
+        
+        <div class="row justify-content-center">
+            <div class="col-xl-12 ftco-animate">
+				
 		    </div>
       </div>
     </section>
