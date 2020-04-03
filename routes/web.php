@@ -51,5 +51,5 @@ Route::get('mail',function(){
     {
         echo $e->getMessage();
     }
-    return view('OrderShipped');
+    return view('OrderPlaced');
 });
