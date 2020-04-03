@@ -84,7 +84,7 @@
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h2 class="mb-4">My Cart</h2>
                     <p>
-                    @foreach (session("data") as $product_id)
+                    @foreach (Session::get('data') as $product_id)
                             {{$product_id}}
                     @endforeach</p>
                 </div>
