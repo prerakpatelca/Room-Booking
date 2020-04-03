@@ -77,10 +77,8 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><p class="d-flex total-price">
-		    						<span>Total</span>
-		    						<span>$17.60</span>
-		    					</p></td>
+                                <td><span style=" font-weight: bold;">Total</span>
+		    						<span style=" font-weight: bold;">$17.60</span></td>
                             </tr>
                             </tbody>
                           </table>
