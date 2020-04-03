@@ -277,6 +277,7 @@
     <section class="ftco-section ftco-cart">
             <div class="container">
                 <div class="row">
+                <h2 class="mb-4">Our Products</h2>
                 <div class="col-md-12 ftco-animate">
                     <div class="cart-list">
                         <table class="table">
