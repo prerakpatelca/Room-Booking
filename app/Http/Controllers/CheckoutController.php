@@ -14,7 +14,13 @@ class CheckoutController extends Controller
     public function index()
     {
         $cart = session('test');
-        return view('checkout',['carts' => $cart]);
+
+        foreach($cart as $eachProduct)
+        {
+            $grandtotal += $eachProduct->total;
+        }
+        session(['grandtotal' => $grandtotal]);
+        return view('checkout',['carts' => $cart,'grandtotal' => session('grandtotal')]);
     }
 
     /**
