@@ -71,7 +71,7 @@ class Products extends Controller
     public function edit(Product $product)
     {
         $productsCart = session('cart');
-        array_push($productsCart,$product->name);
+        array_push($productsCart,$product);
         session(['cart' => $productsCart]);
         return session('cart');
     }
