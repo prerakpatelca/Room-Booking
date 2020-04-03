@@ -114,7 +114,7 @@
                                         
                                         <td class="price">{{ $cart->price }}</td>
                                         
-                                        <td class="quantity">{{ $cart->price }}</td>       
+                                        <td class="price">{{ $cart->price }}</td>       
                                         <td class="total"></td>
                                     </tr>
                             @endforeach
