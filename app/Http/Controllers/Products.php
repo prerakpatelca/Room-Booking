@@ -16,6 +16,6 @@ class Products extends Controller
     public function addToCart(Product $product)
     {
         $products = DB::table('products')->where('id',$product->id)->first();
-        return $products->name;
+        return "j";
     }
 }
