@@ -133,7 +133,7 @@
                             <input type="email" class="form-control" required>
 	                    </div>
                     </div>
-                    <div class="w-100"></div>
+                    <div class="w-100">
                         <button type="submit" class="btn btn-primary py-3 px-4" style="color:white;">Place Order</button>
                     </div>
             </form>
