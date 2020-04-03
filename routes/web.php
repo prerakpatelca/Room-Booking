@@ -25,4 +25,4 @@ Route::get('get',function(){
     echo session("key") . session("anotherkey");
 });
 
-Route::get('product','Products@addToCart');
+Route::get('/product?product={$id}','Products@addToCart');
