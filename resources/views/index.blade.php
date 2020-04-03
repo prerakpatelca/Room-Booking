@@ -120,7 +120,7 @@
                 </div>
             </div>
             </div>
-            <p align="center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
+            <p align="center"><a href="{{ route('checkout.index') }}" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
         </section>
   
 

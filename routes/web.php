@@ -26,3 +26,4 @@ Route::get('get',function(){
 });
 
 Route::resource('products', 'Products');
+Route::resource('checkout', 'CheckoutController');
