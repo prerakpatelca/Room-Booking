@@ -51,5 +51,5 @@ Route::get('mail',function(){
     {
         echo $e->getMessage();
     }
-    echo "Email being sent";
+    return view('OrderShipped');
 });
