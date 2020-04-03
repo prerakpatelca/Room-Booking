@@ -16,7 +16,7 @@ class Products extends Controller
      */
     public function __construct()
     {
-        
+        $addToProducts = array('');
     }
     /**
      * Display a listing of the resource.
@@ -36,7 +36,6 @@ class Products extends Controller
      */
     public function create()
     {
-        $addToProducts = array('');
     }
 
     /**
