@@ -58,7 +58,7 @@ class Products extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function addToCart(Product $product)
+    public function edit(Product $product)
     {
         return $product;
     }
