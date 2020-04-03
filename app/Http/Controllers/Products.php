@@ -11,4 +11,9 @@ class Products extends Controller
         $products = Product::get();
         return view('index',['products' => $products]);
     }
+
+    public function addToCart()
+    {
+        return "you clicked add to cart!!";
+    }
 }
