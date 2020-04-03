@@ -100,7 +100,8 @@
             <div class="row justify-content-center">
                 <div class="col-xl-12 ftco-animate">
                     <form action="#" class="billing-form">
-                                    <h3 class="mb-4 billing-heading">Billing Details</h3>
+                        <br>
+                        <h3 class="mb-4 billing-heading">Billing Details</h3>
                         <div class="row align-items-end">
                             <div class="col-md-6">
                             <div class="form-group">
