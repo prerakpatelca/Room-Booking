@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use App\Mail\OrderPlaced;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,6 +35,17 @@ Route::get('email',function(){
             $message->from("test@example.com","Laravel");
             $message->to("patelprerak14@gmail.com");
         });
+    }
+    catch (Exception $e)
+    {
+        echo $e->getMessage();
+    }
+    echo "Email being sent";
+});
+
+Route::get('mail',function(){
+    try{
+        Mail::to("patelprerak14@gmail.com")->send(new OrderPlaced());
     }
     catch (Exception $e)
     {
