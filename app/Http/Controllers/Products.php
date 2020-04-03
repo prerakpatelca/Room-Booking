@@ -78,7 +78,7 @@ class Products extends Controller
             {
                 $eachProduct->quantity += 1;
                 $productsCart[$pos] = $eachProduct;
-                return session('test');
+                return view('index',['products' => $products, 'carts' => session('test')]);
             }
         }
         
@@ -89,7 +89,7 @@ class Products extends Controller
         array_push($productsCart,$updatedProduct);
         
         session(['test' => $productsCart]);
-        return session('test');
+        return view('index',['products' => $products, 'carts' => session('test')]);
     }
 
     /**
