@@ -133,6 +133,7 @@
 	                    <input type="email" class="form-control" required>
 	                </div>
                 </div>
+                <br>
                 <p align="center"><button type="submit" class="btn btn-primary py-3 px-4">Proceed to Checkout</button></p>
             </form>
         </div>
