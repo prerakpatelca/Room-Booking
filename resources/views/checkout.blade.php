@@ -127,14 +127,17 @@
 	                    <input type="text" class="form-control" required>
 	                </div>
 		            </div>
-	              <div class="col-md-6">
-	                <div class="form-group">
-	                    <label for="emailaddress">Email Address</label>
-	                    <input type="email" class="form-control" required>
-	                </div>
-                </div>
-                <br>
-                <p align="center"><button type="submit" class="btn btn-primary py-3 px-4">Proceed to Checkout</button></p>
+	                <div class="col-md-6">
+	                    <div class="form-group">
+                            <label for="emailaddress">Email Address</label>
+                            <input type="email" class="form-control" required>
+	                    </div>
+                    </div>
+                    <div class="col-md-6">
+	                    <div class="form-group">
+                            <button type="submit" class="btn btn-primary py-3 px-4">Proceed to Checkout</button>
+	                    </div>
+                    </div>
             </form>
         </div>
     </section>
