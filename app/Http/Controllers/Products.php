@@ -17,7 +17,7 @@ class Products extends Controller
     public function __construct()
     {
         $emptyCart = [];
-        session(['carts' => $emptyCart ]);
+        session(['test' => $emptyCart ]);
     }
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class Products extends Controller
     public function index()
     {
         $products = Product::get();
-        $cart = session('carts');
+        $cart = session('test');
         return view('index',['products' => $products, 'carts' => $cart]);
     }
 
@@ -70,10 +70,27 @@ class Products extends Controller
      */
     public function edit(Product $product)
     {
-        $productsCart = session('carts');
-        array_push($productsCart,$product);
-        session(['carts' => $productsCart]);
-        return session('carts');
+        $productsCart = session('test');
+
+        foreach($productsCart as $eachProduct)
+        {
+            if($eachProduct->id == $product->id )
+            {
+                $eachProduct->quantity .= 1;
+                $t = $eachProduct;
+                $t['quantity'] = $quantity;
+                $updatedProduct = $t;
+            }
+        }
+        
+
+        $temp = $product;
+        $temp['quantity'] = 1;
+        $updatedProduct = $temp;
+        array_push($productsCart,$updatedProduct);
+        
+        session(['test' => $productsCart]);
+        return session('test');
     }
 
     /**
