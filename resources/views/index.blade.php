@@ -83,7 +83,7 @@
             <div class="container">
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h2 class="mb-4">My Cart</h2>
-                    <p>{{ Session::get('cart') }}</p>
+                    <p></p>
                 </div>
                 <div class="row">
                 <div class="col-md-12 ftco-animate">
