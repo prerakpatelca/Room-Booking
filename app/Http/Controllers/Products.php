@@ -78,6 +78,7 @@ class Products extends Controller
             if($eachProduct->id == $product->id )
             {
                 $eachProduct->quantity += 1;
+                $eachProduct->total = $eachProduct->quantity*$eachProduct->price;
                 $productsCart[$pos] = $eachProduct;
                 return redirect()->action('Products@index');
             }
@@ -86,6 +87,7 @@ class Products extends Controller
 
         $temp = $product;
         $temp['quantity'] = 1;
+        $temp['total'] = $product->price;
         $updatedProduct = $temp;
         array_push($productsCart,$updatedProduct);
         
