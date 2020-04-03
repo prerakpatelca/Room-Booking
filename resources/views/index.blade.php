@@ -103,7 +103,12 @@
 
                             @foreach($carts as $cart)
                                 <tr class="text-center">
-                                    <td class="product-remove"><a href="#"><i class="fas fa-times"></i></a></td>
+                                    <td class="product-remove">
+                                        <form action="{{ action('Products@destroy', ['products' => $cart]) }}" method="POST">
+                                        @method('DELETE')
+                                        @csrf
+                                        <button type="submit" class="btn btn-link delete" title="Delete" value="DELETE"><i class="fas fa-times"></i></button>
+                                        </form></td>
                                     
                                     <td class="image-prod"><div class="img" style="background-image:url(img/{{ $cart }});"></div></td>
                                     
