@@ -9,11 +9,15 @@ use Illuminate\Support\Facades\DB;
 
 class Products extends Controller
 {
-
-    public function __construct() {
-        $addToProducts = array("red","green");
-     }
-
+    /**
+     * Instantiate a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        
+    }
     /**
      * Display a listing of the resource.
      *
@@ -32,7 +36,7 @@ class Products extends Controller
      */
     public function create()
     {
-        //
+        $addToProducts = array('');
     }
 
     /**
