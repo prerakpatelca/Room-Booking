@@ -133,7 +133,7 @@
 	                    <input type="email" class="form-control" required>
 	                </div>
                 </div>
-                <p align="center"><a href="{{ route('checkout.index') }}" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
+                <p align="center"><button type="submit" class="btn btn-primary py-3 px-4">Proceed to Checkout</button></p>
             </form>
         </div>
     </section>
