@@ -79,7 +79,7 @@ class Products extends Controller
             {
                 $eachProduct->quantity += 1;
                 $productsCart[$pos] = $eachProduct;
-                return view('index',['products' => $products, 'carts' => session('test')]);
+                return redirect()->action('Products@index');
             }
         }
         
@@ -90,7 +90,7 @@ class Products extends Controller
         array_push($productsCart,$updatedProduct);
         
         session(['test' => $productsCart]);
-        return view('index',['products' => $products, 'carts' => session('test')]);
+        return redirect()->action('Products@index');
     }
 
     /**
