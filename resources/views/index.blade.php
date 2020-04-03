@@ -104,26 +104,23 @@
                             @foreach($carts as $cart)
                                 <tr class="text-center">
                                     <td class="product-remove">
-                                        <form action="" method="POST">
-                                        @method('DELETE')
-                                        @csrf
-                                        <button type="submit" class="btn btn-link delete" title="Delete" value="DELETE"><i class="fas fa-times"></i></button>
-                                        </form></td>
+                                        <i class="fas fa-times"></i>
+                                        </td>
                                     
-                                    <td class="image-prod"><div class="img" style="background-image:url(img/{{ $cart }});"></div></td>
+                                    <td class="image-prod"><div class="img" style="background-image:url(img/);"></div></td>
                                     
                                     <td class="product-name">
-                                        <h3>{{ $cart }}</h3>
+                                        <h3></h3>
                                     </td>
                                     
-                                    <td class="price">{{ $cart }} </td>
+                                    <td class="price"> </td>
                                     
                                     <td class="quantity">
                                         <div class="input-group mb-3">
                                         <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
                                     </div>
                                 </td>       
-                                    <td class="total">{{ $cart }}</td>
+                                    <td class="total"></td>
                                 </tr>
                             @endforeach
 
