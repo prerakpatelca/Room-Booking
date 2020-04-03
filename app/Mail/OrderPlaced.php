@@ -28,6 +28,6 @@ class OrderPlaced extends Mailable
      */
     public function build()
     {
-        return "OrderPlaced";
+        return $this->view('OrderPlaced');
     }
 }
