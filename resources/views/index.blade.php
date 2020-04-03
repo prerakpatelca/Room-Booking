@@ -100,26 +100,28 @@
                               </tr>
                             </thead>
                             <tbody>
-                                <tr class="text-center">
-                                    <td class="product-remove">
-                                        <i class="fas fa-times"></i>
+                            @foreach($carts as $cart)
+                                    <tr class="text-center">
+                                        <td class="product-remove">
+                                            <i class="fas fa-times"></i>
+                                            </td>
+                                        
+                                        <td class="image-prod"><div class="img" style="background-image:url(img/{{ $cart->image }});"></div></td>
+                                        
+                                        <td class="product-name">
+                                            <h3>{{ $cart->name }}</h3>
                                         </td>
-                                    
-                                    <td class="image-prod"><div class="img" style="background-image:url(img/);"></div></td>
-                                    
-                                    <td class="product-name">
-                                        <h3></h3>
-                                    </td>
-                                    
-                                    <td class="price"> </td>
-                                    
-                                    <td class="quantity">
-                                        <div class="input-group mb-3">
-                                        <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
-                                    </div>
-                                </td>       
-                                    <td class="total"></td>
-                                </tr>
+                                        
+                                        <td class="price">{{ $cart->price }}</td>
+                                        
+                                        <td class="quantity">
+                                            <div class="input-group mb-3">
+                                            <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
+                                        </div>
+                                    </td>       
+                                        <td class="total"></td>
+                                    </tr>
+                            @endforeach
 
                               <tr class="text-center">
                                 <td class="product-remove"><a href="#"><i class="fas fa-times"></i></a></td>
