@@ -104,13 +104,13 @@
 	          		<div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="firstname">Firt Name</label>
-	                  <input type="text" class="form-control" placeholder="">
+	                  <input type="text" class="form-control" required>
 	                </div>
 	              </div>
 	              <div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="lastname">Last Name</label>
-	                  <input type="text" class="form-control" placeholder="">
+	                  <input type="text" class="form-control" required>
 	                </div>
                 </div>
                 <div class="w-100"></div>
@@ -118,21 +118,22 @@
 		            <div class="col-md-6">
 		            	<div class="form-group">
 	                	<label for="streetaddress">Credit Card Number</label>
-	                  <input type="text" class="form-control" placeholder="House number and street name">
+	                    <input type="number" class="form-control" required>
 	                </div>
 		            </div>
 		            <div class="col-md-6">
 		            	<div class="form-group">
                         <label for="streetaddress">Expiry Date</label>
-	                    <input type="text" class="form-control" placeholder="Appartment, suite, unit etc: (optional)">
+	                    <input type="text" class="form-control" required>
 	                </div>
 		            </div>
 	              <div class="col-md-6">
 	                <div class="form-group">
-	                	<label for="emailaddress">Email Address</label>
-	                  <input type="text" class="form-control" placeholder="">
+	                    <label for="emailaddress">Email Address</label>
+	                    <input type="email" class="form-control" required>
 	                </div>
                 </div>
+                <p align="center"><a href="{{ route('checkout.index') }}" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
             </form>
         </div>
     </section>
