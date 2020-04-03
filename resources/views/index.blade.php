@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/magnific-popup.css">
     <link rel="stylesheet" href="/css/ionicons.min.css"> 
     <link rel="stylesheet" href="/css/flaticon.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="goto-here">
 
@@ -359,5 +360,6 @@
   <script src="/js/aos.js"></script>
   <script src="/js/scrollax.min.js"></script>
   <script src="/js/main.js"></script>
+  <script src="/js/app.js" defer></script>
   </body>
 </html>
