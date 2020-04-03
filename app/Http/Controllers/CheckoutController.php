@@ -13,6 +13,7 @@ class CheckoutController extends Controller
      */
     public function index()
     {
+        $grandtotal = 0;
         $cart = session('test');
 
         foreach($cart as $eachProduct)
