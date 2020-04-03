@@ -32,7 +32,7 @@ Route::get('email',function(){
     try{
         Mail::raw("Body of the email", function($message){
             $message->from("test@example.com","Laravel");
-            $message->to("softwarehamilton@gmail.com");
+            $message->to("patelprerak14@gmail.com");
         });
     }
     catch (Exception $e)
