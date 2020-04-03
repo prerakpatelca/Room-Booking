@@ -27,3 +27,17 @@ Route::get('get',function(){
 
 Route::resource('products', 'Products');
 Route::resource('checkout', 'CheckoutController');
+
+Route::get('email',function(){
+    try{
+        Mail::raw("Body of the email", function($message){
+            $message->from("test@example.com","Laravel");
+            $message->to("softwarehamilton@gmail.com");
+        });
+    }
+    catch (Exception $e)
+    {
+        echo $e->getMessage();
+    }
+    echo "Email being sent";
+});

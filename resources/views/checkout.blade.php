@@ -81,7 +81,7 @@
 	            <h3 class="billing-heading mb-4">Cart Total</h3>
 	          	<p class="d-flex">
                     <span>Subtotal</span>
-                    <span>{{ $grandtotal }}</span>
+                    <span>${{ $grandtotal }}</span>
 		    	</p>
                 <p class="d-flex">
                     <span>Delivery</span>
@@ -94,7 +94,7 @@
                 <hr>
                 <p class="d-flex total-price">
                     <span>Total</span>
-                    <span>{{ $grandtotal }}</span>
+                    <span>${{ $grandtotal }}</span>
                 </p>
 		    </div>
             <form action="#" class="billing-form">
