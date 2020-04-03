@@ -25,8 +25,8 @@ class Products extends Controller
     public function index()
     {
         $products = Product::get();
-        $cart = session('cart');
-        return view('index',['products' => $products, 'carts' => $cart]);
+        $carts = session('carts');
+        return view('index',['products' => $products, 'carts' => $carts]);
     }
 
     /**
@@ -70,10 +70,10 @@ class Products extends Controller
      */
     public function edit(Product $product)
     {
-        $productsCart = session('cart');
+        $productsCart = session('carts');
         array_push($productsCart,$product);
-        session(['cart' => $productsCart]);
-        return session('cart');
+        session(['carts' => $productsCart]);
+        return session('carts');
     }
 
     /**
