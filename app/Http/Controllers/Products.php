@@ -25,7 +25,8 @@ class Products extends Controller
     public function index()
     {
         $products = Product::get();
-        return view('index',['products' => $products]);
+        $cart = session('cart');
+        return view('index',['products' => $products, 'carts' => $cart]);
     }
 
     /**
@@ -72,7 +73,6 @@ class Products extends Controller
         $productsCart = session('cart');
         array_push($productsCart,$product->name);
         session(['cart' => $productsCart]);
-        
         return session('cart');
     }
 
