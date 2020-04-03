@@ -68,7 +68,7 @@ class Products extends Controller
      */
     public function edit(Product $product)
     {
-        if($addToProducts->isEmpty())
+        if(!isset($addToProducts))
         {
             $addToProducts = array($product->name);
         }
