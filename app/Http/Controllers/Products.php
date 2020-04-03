@@ -62,7 +62,7 @@ class Products extends Controller
     {
         $product = collect([1,2,3,4]);
         Session::push('cart', $product);
-        return session("data");
+        return Session::get('cart');
     }
 
     /**
