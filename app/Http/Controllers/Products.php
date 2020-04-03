@@ -36,8 +36,6 @@ class Products extends Controller
      */
     public function create()
     {
-        $emptyCart = [];
-        session(['cart' => $emptyCart ]);
     }
 
     /**
@@ -94,10 +92,7 @@ class Products extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Product $product)
     {
-        $productsCart = session('cart');
-        $productsCart.pop(0);
-        session(['cart' => $productsCart]);
     }
 }

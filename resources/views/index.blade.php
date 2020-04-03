@@ -104,7 +104,7 @@
                             @foreach($carts as $cart)
                                 <tr class="text-center">
                                     <td class="product-remove">
-                                        <form action="{{ action('Products@destroy', ['products' => $cart]) }}" method="POST">
+                                        <form action="" method="POST">
                                         @method('DELETE')
                                         @csrf
                                         <button type="submit" class="btn btn-link delete" title="Delete" value="DELETE"><i class="fas fa-times"></i></button>
