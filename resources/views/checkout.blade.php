@@ -39,12 +39,12 @@
     <!-- END nav -->
     
     <section class="ftco-section ftco-cart">
-            <div class="container">
+        <div class="container">
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h2 class="mb-4">My Cart</h2>
                     <p></p>
                 </div>
-                <div class="row">
+            <div class="row">
                 <div class="col-md-12 ftco-animate">
                     <div class="cart-list">
                         <table class="table">
@@ -73,36 +73,36 @@
                                     </tr>
                             @endforeach
                             </tbody>
-                          </table>
-                      </div>
+                        </table>
+                    </div>
                 </div>
             </div>
-            </div>
-        </section>
+            <div class="cart-detail cart-total p-3 p-md-4">
+	        <h3 class="billing-heading mb-4">Cart Total</h3>
+	          	<p class="d-flex">
+                    <span>Subtotal</span>
+                    <span>$20.60</span>
+		    	</p>
+                <p class="d-flex">
+                    <span>Delivery</span>
+                    <span>$0.00</span>
+                </p>
+                <p class="d-flex">
+                    <span>Discount</span>
+                    <span>$3.00</span>
+                </p>
+                <hr>
+                <p class="d-flex total-price">
+                    <span>Total</span>
+                    <span>$17.60</span>
+                </p>
+		    </div>
+        </div>
+    </section>
   
         <section class="ftco-section">
       <div class="container">
-      <div class="cart-detail cart-total p-3 p-md-4">
-	          			<h3 class="billing-heading mb-4">Cart Total</h3>
-	          			<p class="d-flex">
-		    						<span>Subtotal</span>
-		    						<span>$20.60</span>
-		    					</p>
-		    					<p class="d-flex">
-		    						<span>Delivery</span>
-		    						<span>$0.00</span>
-		    					</p>
-		    					<p class="d-flex">
-		    						<span>Discount</span>
-		    						<span>$3.00</span>
-		    					</p>
-		    					<hr>
-		    					<p class="d-flex total-price">
-		    						<span>Total</span>
-		    						<span>$17.60</span>
-		    					</p>
-							
-	          	</div>
+        
         <div class="row justify-content-center">
             <div class="col-xl-12 ftco-animate">
 				<form action="#" class="billing-form">
