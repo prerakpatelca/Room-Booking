@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\DB;
 
 class Products extends Controller
 {
+
+    public function __construct() {
+        $addToProducts = array("red","green");
+     }
+
     /**
      * Display a listing of the resource.
      *
@@ -60,7 +65,7 @@ class Products extends Controller
      */
     public function edit(Product $product)
     {
-        $addToProducts = array("red","green");
+        
         array_push($addToProducts,$product->name);
         session(['cart' => $addToProducts]);
         return session('cart');
