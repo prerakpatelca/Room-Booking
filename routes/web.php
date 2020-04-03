@@ -15,4 +15,11 @@ use Illuminate\Support\Facades\DB;
 
 Route::get('/', 'Products@index');
 
-Route::get('/test', 'Products@index');
+Route::get('set/{value}', function($value){
+    session(["key" => $value]);
+    echo "Setting session key to ". $value;
+});
+
+Route::get('get',function(){
+    echo session("key");
+});
