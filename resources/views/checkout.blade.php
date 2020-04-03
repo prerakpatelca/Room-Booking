@@ -82,6 +82,9 @@
   
         <section class="ftco-section">
       <div class="container">
+      <div class="row mt-5 pt-3">
+	          	<div class="col-md-12 d-flex mb-5">
+
       <div class="cart-detail cart-total p-3 p-md-4">
 	          			<h3 class="billing-heading mb-4">Cart Total</h3>
 	          			<p class="d-flex">
@@ -103,6 +106,9 @@
 		    					</p>
 							
 	          	</div>
+
+	          </div>
+          </div>
         <div class="row justify-content-center">
           <div class="col-xl-7 ftco-animate">
 						<form action="#" class="billing-form">
@@ -143,11 +149,7 @@
 	          </form>
 					</div>
 					<div class="col-xl-5">
-	          <div class="row mt-5 pt-3">
-	          	<div class="col-md-12 d-flex mb-5">
-
-	          </div>
-          </div>
+	          
         </div>
       </div>
     </section>
