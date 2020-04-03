@@ -72,14 +72,15 @@ class Products extends Controller
     {
         $productsCart = session('test');
 
-        foreach($productsCart as $eachProduct)
+        foreach($productsCart as $pos => $eachProduct)
         {
             if($eachProduct->id == $product->id )
             {
                 $eachProduct->quantity .= 1;
-                $t = $eachProduct;
-                $t['quantity'] = $quantity;
-                $updatedProduct = $t;
+                $updatedProduct = $eachProduct;
+                $productsCart.pop($pos);
+                array_push($productsCart,$updatedProduct);
+                return session('test');
             }
         }
         
