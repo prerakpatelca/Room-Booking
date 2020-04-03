@@ -12,8 +12,9 @@ class Products extends Controller
         return view('index',['products' => $products]);
     }
 
-    public function addToCart()
+    public function addToCart(Product $product)
     {
-        return "you clicked add to cart!!";
+        $rooms = DB::table('products')->where('id',$product->id)->first();
+        return $rooms;
     }
 }
