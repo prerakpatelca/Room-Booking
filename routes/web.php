@@ -24,3 +24,5 @@ Route::get('set/{value}/{value2}', function($value,$value2){
 Route::get('get',function(){
     echo session("key") . session("anotherkey");
 });
+
+Route::get('products','Products@addToCart');
