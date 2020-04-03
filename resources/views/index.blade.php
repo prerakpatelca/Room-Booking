@@ -65,7 +65,7 @@
                                 </div>
                                 <div class="bottom-area d-flex px-3">
                                     <div class="m-auto d-flex">
-                                        <a href="{{ url('products') }}" class="heart d-flex justify-content-center align-items-center ">
+                                        <a href="{{ action('Products@addToCart') }}" class="heart d-flex justify-content-center align-items-center ">
                                             <span><i class="fas fa-shopping-cart"></i></span>
                                         </a>
                                     </div>
