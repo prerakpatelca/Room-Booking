@@ -14,7 +14,7 @@ class CheckoutController extends Controller
     public function index()
     {
         $cart = session('test');
-        return view('index',['products' => $products, 'carts' => $cart]);
+        return view('index',['carts' => $cart]);
     }
 
     /**
