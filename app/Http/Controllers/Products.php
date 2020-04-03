@@ -70,6 +70,7 @@ class Products extends Controller
      */
     public function edit(Product $product)
     {
+        $products = Product::get();
         $productsCart = session('test');
 
         foreach($productsCart as $pos => $eachProduct)
