@@ -77,9 +77,7 @@ class Products extends Controller
             if($eachProduct->id == $product->id )
             {
                 $eachProduct->quantity .= 1;
-                $updatedProduct = $eachProduct;
-                $productsCart.pop($pos);
-                array_push($productsCart,$updatedProduct);
+                $productsCart[$pos] = $eachProduct;
                 return session('test');
             }
         }
