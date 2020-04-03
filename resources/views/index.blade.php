@@ -296,9 +296,9 @@
                             </thead>
                             <tbody>
                               <tr class="text-center">
-                                <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+                                <td class="product-remove"><a href="#"><i class="fas fa-times"></i></a></td>
                                 
-                                <td class="image-prod"><div class="img" style="background-image:url(images/product-3.jpg);"></div></td>
+                                <td class="image-prod"><div class="img" style="background-image:url(img/product-3.jpg);"></div></td>
                                 
                                 <td class="product-name">
                                     <h3>Bell Pepper</h3>
@@ -317,9 +317,9 @@
                               </tr><!-- END TR-->
 
                               <tr class="text-center">
-                                <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+                                <td class="product-remove"><a href="#"><i class="fas fa-times"></i></a></td>
                                 
-                                <td class="image-prod"><div class="img" style="background-image:url(images/product-4.jpg);"></div></td>
+                                <td class="image-prod"><div class="img" style="background-image:url(img/product-4.jpg);"></div></td>
                                 
                                 <td class="product-name">
                                     <h3>Bell Pepper</h3>
