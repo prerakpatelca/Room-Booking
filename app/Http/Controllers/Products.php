@@ -68,8 +68,14 @@ class Products extends Controller
      */
     public function edit(Product $product)
     {
-        
-        $addToProducts = array($product->name);
+        if($addToProducts->isEmpty())
+        {
+            $addToProducts = array($product->name);
+        }
+        else
+        {
+            array_push($addToProducts,$product->name);
+        }
         session(['cart' => $addToProducts]);
         return session('cart');
     }
