@@ -17,8 +17,4 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/test', function () {
-    $users = DB::table('products')->get();
-
-    return $users;
-});
+Route::get('/test', 'Products@index');
