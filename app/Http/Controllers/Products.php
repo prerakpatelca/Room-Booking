@@ -16,7 +16,6 @@ class Products extends Controller
      */
     public function __construct()
     {
-        $addToProducts = array('');
     }
     /**
      * Display a listing of the resource.
@@ -36,6 +35,8 @@ class Products extends Controller
      */
     public function create()
     {
+        $emptyCart = [];
+        session(['cart' => $emptyCart ]);
     }
 
     /**
@@ -68,16 +69,10 @@ class Products extends Controller
      */
     public function edit(Product $product)
     {
-        if(isset($addToProducts))
-        {
-            array_push($addToProducts,$product->name);
-            
-        }
-        else
-        {
-            $addToProducts = array($product->name);
-        }
-        session(['cart' => $addToProducts]);
+        $productsCart = session('cart');
+        array_push($productsCart,$product->name);
+        session(['cart' => $productsCart]);
+        
         return session('cart');
     }
 
