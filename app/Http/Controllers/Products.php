@@ -76,7 +76,7 @@ class Products extends Controller
         {
             if($eachProduct->id == $product->id )
             {
-                $eachProduct->quantity .= 1;
+                $eachProduct->quantity += 1;
                 $productsCart[$pos] = $eachProduct;
                 return session('test');
             }
