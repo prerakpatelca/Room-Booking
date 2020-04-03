@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
     <link href="/css/app.css" rel="stylesheet">
 
@@ -73,7 +74,7 @@
                                         <span>-</i></span>
                                     </a>
                                     <a href="#" class="heart d-flex justify-content-center align-items-center ">
-                                        <span>Add</i></span>
+                                        <span><i class="fas fa-shopping-cart"></i></span>
                                     </a>
                                 </div>
                             </div>
