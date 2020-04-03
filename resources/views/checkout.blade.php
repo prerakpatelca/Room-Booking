@@ -97,47 +97,43 @@
                     <span>$17.60</span>
                 </p>
 		    </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-12 ftco-animate">
-                    <form action="#" class="billing-form">
-                        <br>
-                        <h3 class="mb-4 billing-heading">Billing Details</h3>
-                        <div class="row align-items-end">
-                            <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="firstname">Firt Name</label>
-                            <input type="text" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="lastname">Last Name</label>
-                            <input type="text" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                        <div class="w-100"></div>
-                            <div class="w-100"></div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                <label for="streetaddress">Credit Card Number</label>
-                            <input type="text" class="form-control" placeholder="House number and street name">
-                            </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                <label for="streetaddress">Expiry Date</label>
-                                <input type="text" class="form-control" placeholder="Appartment, suite, unit etc: (optional)">
-                            </div>
-                            </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="emailaddress">Email Address</label>
-                            <input type="text" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                    </form>
+            <form action="#" class="billing-form">
+                <br>
+				<h3 class="mb-4 billing-heading">Billing Details</h3>
+	          	<div class="row align-items-end">
+	          		<div class="col-md-6">
+	                <div class="form-group">
+	                	<label for="firstname">Firt Name</label>
+	                  <input type="text" class="form-control" placeholder="">
+	                </div>
+	              </div>
+	              <div class="col-md-6">
+	                <div class="form-group">
+	                	<label for="lastname">Last Name</label>
+	                  <input type="text" class="form-control" placeholder="">
+	                </div>
                 </div>
-            </div>
+                <div class="w-100"></div>
+		            <div class="w-100"></div>
+		            <div class="col-md-6">
+		            	<div class="form-group">
+	                	<label for="streetaddress">Credit Card Number</label>
+	                  <input type="text" class="form-control" placeholder="House number and street name">
+	                </div>
+		            </div>
+		            <div class="col-md-6">
+		            	<div class="form-group">
+                        <label for="streetaddress">Expiry Date</label>
+	                    <input type="text" class="form-control" placeholder="Appartment, suite, unit etc: (optional)">
+	                </div>
+		            </div>
+	              <div class="col-md-6">
+	                <div class="form-group">
+	                	<label for="emailaddress">Email Address</label>
+	                  <input type="text" class="form-control" placeholder="">
+	                </div>
+                </div>
+            </form>
         </div>
     </section>
   
@@ -147,7 +143,8 @@
         <div class="row justify-content-center">
             <div class="col-xl-12 ftco-animate">
 				
-		    
+		    </div>
+      </div>
     </section>
 
   <!-- loader -->
