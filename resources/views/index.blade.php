@@ -105,7 +105,7 @@
                                 <tr class="text-center">
                                     <td class="product-remove"><a href="#"><i class="fas fa-times"></i></a></td>
                                     
-                                    <td class="image-prod"><div class="img" style="background-image:url(img/{{ $cart->image }});"></div></td>
+                                    <td class="image-prod"><div class="img" style="background-image:url(img/{{ $cart }});"></div></td>
                                     
                                     <td class="product-name">
                                         <h3>{{ $cart->name }}</h3>
