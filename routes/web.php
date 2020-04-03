@@ -51,5 +51,5 @@ Route::get('mail',function(){
     {
         echo $e->getMessage();
     }
-    return "hi";
+    echo "Email being sent";
 });
