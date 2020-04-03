@@ -61,7 +61,7 @@ class Products extends Controller
     public function edit(Product $product)
     {
         $product = collect([1,2,3,4]);
-        Session::push('cart', $product);
+        session('cart', $product);
         return Session::get('cart');
     }
 
