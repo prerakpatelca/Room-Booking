@@ -61,7 +61,7 @@ class Products extends Controller
     public function edit(Product $product)
     {
         $cart[] = [1,2];
-        session([ 'data' => "val"]);
+        session([ "data" => "val"]);
         return $product;
     }
 
