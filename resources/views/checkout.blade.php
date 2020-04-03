@@ -114,7 +114,7 @@
 	                </div>
                 </div>
                 <div class="w-100"></div>
-		            <div class="w-100"></div>
+		            
 		            <div class="col-md-6">
 		            	<div class="form-group">
 	                	<label for="streetaddress">Credit Card Number</label>
@@ -133,10 +133,8 @@
                             <input type="email" class="form-control" required>
 	                    </div>
                     </div>
-                    <div class="col-md-6">
-	                    <div class="form-group">
-                            <button type="submit" class="btn btn-primary py-3 px-4">Proceed to Checkout</button>
-	                    </div>
+                    <div class="w-100"></div>
+                        <button type="submit" class="btn btn-primary py-3 px-4">Proceed to Checkout</button>
                     </div>
             </form>
         </div>
