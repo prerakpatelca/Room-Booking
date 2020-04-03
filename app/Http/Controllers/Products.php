@@ -60,8 +60,9 @@ class Products extends Controller
      */
     public function edit(Product $product)
     {
-        $product = [1,2,3,4];
-        session(['cart' => $product]);
+        $addToProducts = array("red","green");
+        array_push($addToProducts,$product->name);
+        session(['cart' => $addToProducts]);
         return session('cart');
     }
 
