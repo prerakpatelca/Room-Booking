@@ -9,6 +9,6 @@ class Products extends Controller
     public function index()
     {
         $products = Product::get();
-        return $products;
+        return view('index',['products' => $products]);
     }
 }

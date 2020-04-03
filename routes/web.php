@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\DB;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'Products@index');
 
 Route::get('/test', 'Products@index');
