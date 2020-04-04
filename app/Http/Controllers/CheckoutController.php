@@ -42,12 +42,11 @@ class CheckoutController extends Controller
      */
     public function store(Request $request)
     {
-        $billing['firstname'] = $request->input('firstname');;
-        $billing['lastname'] = $request->input('lastname');
-        $billing['creditcard'] = $request->input('creditcard');
-        $billing['expirydate'] = $request->input('expirydate');
-        $billing['emailaddress'] = $request->input('emailaddress');
-        session(['billing' => $billing ]);
+        session(['firstname' => $request->input('firstname') ]);
+        session(['lastname' => $request->input('lastname') ]);
+        session(['creditcard' => $request->input('creditcard') ]);
+        session(['expirydate' => $request->input('expirydate') ]);
+        session(['emailaddress' => $request->input('emailaddress') ]);
         return redirect()->route('mail');
     }
 
