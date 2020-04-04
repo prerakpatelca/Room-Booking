@@ -49,40 +49,40 @@
                     <p></p>
                 </div>
                 <div class="row">
-                <div class="col-md-12 ftco-animate">
-                    <div class="cart-list">
-                        <table class="table">
-                            <thead class="thead-primary">
-                              <tr class="text-center">
-                                <th>&nbsp;</th>
-                                <th>Product name</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Total</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                            @foreach(session('test') as $cart)
-                                    <tr class="text-center">
-                                        
-                                        <td class="image-prod"><div class="img" style="background-image:url(img/{{ $cart->image }});"></div></td>
-                                        
-                                        <td class="product-name">
-                                            <h3>{{ $cart->name }}</h3>
-                                        </td>
-                                        
-                                        <td class="price">{{ $cart->price }}</td>
-                                        <td class="price">{{ $cart->quantity }}</td>       
-                                        <td class="total">${{ $cart->total }}</td>
-                                    </tr>
-                            @endforeach
-                            
-                            </tbody>
-                          </table>
-                      </div>
+                    <div class="col-md-12 ftco-animate">
+                        <div class="cart-list">
+                            <table class="table">
+                                <thead class="thead-primary">
+                                <tr class="text-center">
+                                    <th>&nbsp;</th>
+                                    <th>Product name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach(session('test') as $cart)
+                                        <tr class="text-center">
+                                            
+                                            <td class="image-prod"><div class="img" style="background-image:url(img/{{ $cart->image }});"></div></td>
+                                            
+                                            <td class="product-name">
+                                                <h3>{{ $cart->name }}</h3>
+                                            </td>
+                                            
+                                            <td class="price">{{ $cart->price }}</td>
+                                            <td class="price">{{ $cart->quantity }}</td>       
+                                            <td class="total">${{ $cart->total }}</td>
+                                        </tr>
+                                @endforeach
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
+            
             <br>
             @if(count(session('test')) > 0)
                 <p align="center"><a href="{{ route('checkout.index') }}" class="btn btn-primary py-3 px-4">Proceed to Checkout</a>
@@ -90,6 +90,7 @@
             @else
                 <p align="center">Your cart is empty!</p>
             @endif
+            </div>
         </section>
 
 @endsection
