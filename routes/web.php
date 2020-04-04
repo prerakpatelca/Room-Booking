@@ -57,6 +57,8 @@ Route::get('mail',function(){
 
 Route::get('goback',function(){
 
+    $emptyCart = [];
+    session(['test' => $emptyCart ]);
     return App::make('App\Http\Controllers\Products')->index();
     
 })->name('goback');
