@@ -52,4 +52,13 @@ Route::get('mail',function(){
         echo $e->getMessage();
     }
     return view('OrderPlaced');
+
 })->name('mail');
+
+Route::get('goback',function(){
+
+    $emptyCart = [];
+    session(['test' => $emptyCart ]);
+    return 'Products@index';
+    
+})->name('goback');
