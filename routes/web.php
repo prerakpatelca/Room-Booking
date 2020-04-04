@@ -16,32 +16,8 @@ use App\Mail\OrderPlaced;
 
 Route::get('/', 'Products@index');
 
-Route::get('set/{value}/{value2}', function($value,$value2){
-    session(["key" => $value,"anotherkey" => $value2]);
-    echo "Setting session key to ". $value . " and " . $value2;
-    echo session("key") . session("anotherkey");
-});
-
-Route::get('get',function(){
-    echo session("key") . session("anotherkey");
-});
-
 Route::resource('products', 'Products');
 Route::resource('checkout', 'CheckoutController');
-
-Route::get('email',function(){
-    try{
-        Mail::raw("Body of the email", function($message){
-            $message->from("test@example.com","Laravel");
-            $message->to("patelprerak14@gmail.com");
-        });
-    }
-    catch (Exception $e)
-    {
-        echo $e->getMessage();
-    }
-    echo "Email being sent";
-});
 
 Route::get('mail',function(){
     try{
