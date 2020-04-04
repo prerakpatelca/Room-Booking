@@ -38,8 +38,11 @@
     
     <section class="ftco-section ftco-cart">
         <div class="container">
+            <div class="alert alert-success" role="alert">
+                Reciept successfully sent to {{ session('emailaddress') }}
+            </div>
                 <div class="col-md-12 heading-section text-center ftco-animate">
-                    <h2 class="mb-4">My Cart</h2>
+                    <h2 class="mb-4">Order Placed</h2>
                     <p></p>
                 </div>
             <div class="row">
