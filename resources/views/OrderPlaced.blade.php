@@ -76,6 +76,30 @@
                 </div>
             </div>
             <div class="cart-detail cart-total p-3 p-md-4">
+                <h3 class="billing-heading mb-4">Billing Detials</h3>
+	          	<p class="d-flex">
+                    <span>First Name</span>
+                    <span>${{ session('billing') }}</span>
+		    	</p>
+                <p class="d-flex">
+                    <span>Last Name</span>
+                    <span>$0.00</span>
+                </p>
+                <p class="d-flex">
+                    <span>Credit Card</span>
+                    <span>$0.00</span>
+                </p>
+                <hr>
+                <p class="d-flex total-price">
+                    <span>Expiry Date</span>
+                    <span>${{ session('grandtotal') }}</span>
+                </p>
+
+                <p class="d-flex total-price">
+                    <span>Email Address</span>
+                    <span>${{ session('grandtotal') }}</span>
+                </p>
+
 	            <h3 class="billing-heading mb-4">Cart Total</h3>
 	          	<p class="d-flex">
                     <span>Subtotal</span>
@@ -95,44 +119,6 @@
                     <span>${{ session('grandtotal') }}</span>
                 </p>
 		    </div>
-            <form action="#" class="billing-form">
-                <br>
-				<h3 class="mb-4 billing-heading">Billing Details</h3>
-	          	<div class="row align-items-end">
-	          		<div class="col-md-6">
-	                <div class="form-group">
-	                	<label for="firstname">First Name</label>
-	                  <input type="text" class="form-control" required>
-	                </div>
-	              </div>
-	              <div class="col-md-6">
-	                <div class="form-group">
-	                	<label for="lastname">Last Name</label>
-	                  <input type="text" class="form-control" required>
-	                </div>
-                </div>
-		            <div class="col-md-6">
-		            	<div class="form-group">
-	                	<label for="streetaddress">Credit Card Number</label>
-	                    <input type="number" class="form-control" required>
-	                </div>
-		            </div>
-		            <div class="col-md-6">
-		            	<div class="form-group">
-                        <label for="streetaddress">Expiry Date</label>
-	                    <input type="text" class="form-control" required>
-	                </div>
-		            </div>
-	                <div class="col-md-6">
-	                    <div class="form-group">
-                            <label for="emailaddress">Email Address</label>
-                            <input type="email" class="form-control" required>
-	                    </div>
-                    </div>
-                    <div class="w-100">
-                        <button type="submit" class="btn btn-primary py-3 px-4" style="color:white;">Place Order</button>
-                    </div>
-            </form>
         </div>
     </section>
   
