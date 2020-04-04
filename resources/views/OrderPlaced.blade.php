@@ -58,7 +58,7 @@
                               </tr>
                             </thead>
                             <tbody>
-                            @foreach(session('item') as $cart)
+                            @foreach(session('test') as $cart)
                                     <tr class="text-center">
                                         
                                         <td class="image-prod"><div class="img" style="background-image:url(img/{{ $cart->image }});"></div></td>
