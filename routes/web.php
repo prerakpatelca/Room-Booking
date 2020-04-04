@@ -52,4 +52,4 @@ Route::get('mail',function(){
         echo $e->getMessage();
     }
     return view('OrderPlaced');
-});
+})->name('mail');
