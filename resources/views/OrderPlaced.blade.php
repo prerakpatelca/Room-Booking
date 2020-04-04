@@ -80,7 +80,7 @@
 	          	<p class="d-flex">
                     <span>First Name</span>
                     <span>@foreach(session('billing') as $bill)
-                            {{ $bill->firstname }}
+                            {{ $bill }}
                            @endforeach
                     </span>
 		    	</p>
