@@ -97,7 +97,7 @@
                     <span>${{ $grandtotal }}</span>
                 </p>
 		    </div>
-            <form action="{{ route('CheckoutController.store') }}" class="billing-form">
+            <form action="{{ route('checkout.store') }}" class="billing-form">
                 <br>
 				<h3 class="mb-4 billing-heading">Billing Details</h3>
 	          	<div class="row align-items-end">
