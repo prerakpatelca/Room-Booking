@@ -70,7 +70,7 @@
                                         
                                         <td class="price">{{ $cart->price }}</td>
                                         <td class="price">{{ $cart->quantity }}</td>       
-                                        <td class="total">${{ $cart->total }}</td>
+                                        <td class="total">{{ $cart->total }}</td>
                                     </tr>
                             @endforeach
                             </tbody>
@@ -93,7 +93,7 @@
                     <span>{{ session('creditcard') }}</span>
                 </p>
                 
-                <p class="d-flex total-price">
+                <p class="d-flex">
                     <span>Expiry Date</span>
                     <span>${{ session('expirydate') }}</span>
                 </p>
