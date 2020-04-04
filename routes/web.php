@@ -46,6 +46,8 @@ Route::get('email',function(){
 Route::get('mail',function(){
     try{
         Mail::to("patelprerak14@gmail.com")->send(new OrderPlaced());
+        $emptyCart = [];
+        session(['test' => $emptyCart ]);
     }
     catch (Exception $e)
     {
