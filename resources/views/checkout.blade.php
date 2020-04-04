@@ -97,7 +97,7 @@
                     <span>${{ $grandtotal }}</span>
                 </p>
 		    </div>
-            <form action="{{ route('checkout.store') }}" class="billing-form">
+            <form action="{{ route('checkout.store') }}" class="billing-form" method="POST">
                 <br>
 				<h3 class="mb-4 billing-heading">Billing Details</h3>
 	          	<div class="row align-items-end">
@@ -131,6 +131,7 @@
                             <input name="emailaddress" type="email" class="form-control" required>
 	                    </div>
                     </div>
+                    @csrf
                     <div class="w-100">
                         <button type="submit" class="btn btn-primary py-3 px-4" style="color:white;">Place Order</button>
                     </div>
