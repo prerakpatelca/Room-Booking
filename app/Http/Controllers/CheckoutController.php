@@ -48,7 +48,7 @@ class CheckoutController extends Controller
         $billing['expirydate'] = $request->input('expirydate');
         $billing['emailaddress'] = $request->input('emailaddress');
         session(['billing' => $billing ]);
-        return redirect()->route('products');
+        return redirect()->route('mail');
     }
 
     /**
