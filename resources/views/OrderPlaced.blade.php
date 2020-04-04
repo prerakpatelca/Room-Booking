@@ -95,12 +95,12 @@
                 
                 <p class="d-flex">
                     <span>Expiry Date</span>
-                    <span>${{ session('expirydate') }}</span>
+                    <span>{{ session('expirydate') }}</span>
                 </p>
 
                 <p class="d-flex total-price">
                     <span>Email Address</span>
-                    <span>${{ session('emailaddress') }}</span>
+                    <span>{{ session('emailaddress') }}</span>
                 </p>
                 <hr>
 	            <h3 class="billing-heading mb-4">Cart Total</h3>
