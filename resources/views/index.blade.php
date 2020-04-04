@@ -109,7 +109,7 @@
             </div>
             </div>
             <br>
-            <p align="center"><a href="{{ route('checkout.index') }}" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
+            <p align="center"><a href="{{ route('checkout.index') }}" class="btn btn-primary py-3 px-4"> count($_SESSION['cart']) Proceed to Checkout</a></p>
         </section>
   
 
