@@ -59,6 +59,6 @@ Route::get('goback',function(){
 
     $emptyCart = [];
     session(['test' => $emptyCart ]);
-    return 'Products@index';
+    return view('index');
     
 })->name('goback');
