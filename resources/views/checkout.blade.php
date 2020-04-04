@@ -46,7 +46,7 @@
                               </tr>
                             </thead>
                             <tbody>
-                            @foreach($carts as $cart)
+                            @foreach(session('test') as $cart)
                                     <tr class="text-center">
                                         
                                         <td class="image-prod"><div class="img" style="background-image:url(img/{{ $cart->image }});"></div></td>
@@ -69,7 +69,7 @@
 	            <h3 class="billing-heading mb-4">Cart Total</h3>
 	          	<p class="d-flex">
                     <span>Subtotal</span>
-                    <span>${{ $grandtotal }}</span>
+                    <span>${{ session('grandtotal') }}</span>
 		    	</p>
                 <p class="d-flex">
                     <span>Delivery</span>
@@ -82,7 +82,7 @@
                 <hr>
                 <p class="d-flex total-price">
                     <span>Total</span>
-                    <span>${{ $grandtotal }}</span>
+                    <span>${{ session('grandtotal') }}</span>
                 </p>
 		    </div>
             <form action="{{ route('checkout.store') }}" class="billing-form" method="POST">

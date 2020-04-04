@@ -27,8 +27,7 @@ class Products extends Controller
     public function index()
     {
         $products = Product::get();
-        $cart = session('test');
-        return view('index',['products' => $products, 'carts' => $cart]);
+        return view('index',['products' => $products]);
     }
 
     /**
