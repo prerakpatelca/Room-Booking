@@ -22,9 +22,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <ul class="navbar-nav">
-                <li class="nav-item active"><a class="navbar-brand" href="{{ route('products.index') }}">Mohawk Cart</a></li>
-            </ul>
+            <a class="navbar-brand" href="{{ route('products.index') }}">Mohawk Cart</a></li>
         </div>
     </nav>
 
