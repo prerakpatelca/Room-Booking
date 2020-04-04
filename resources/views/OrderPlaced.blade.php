@@ -112,7 +112,7 @@
                     <span>${{ session('grandtotal') }}</span>
                 </p>
 		    </div>
-            <a href="{{ route('goback') }}" class="btn btn-primary py-3 px-4" style="color:white;">Go Back to Shopping Page</a>
+            <a href="{{ route('goback') }}" class="btn btn-primary py-3 px-4">Go Back to Shopping Page</a>
         </div>
     </section>
 
