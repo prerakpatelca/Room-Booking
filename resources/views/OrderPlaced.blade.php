@@ -79,7 +79,10 @@
                 <h3 class="billing-heading mb-4">Billing Detials</h3>
 	          	<p class="d-flex">
                     <span>First Name</span>
-                    <span>${{ session('billing')[0]->firstname }}</span>
+                    <span>@foreach(session('billing') as $bill)
+                            {{ $bill->firstname }}
+                           @endforeach
+                    </span>
 		    	</p>
                 <p class="d-flex">
                     <span>Last Name</span>
