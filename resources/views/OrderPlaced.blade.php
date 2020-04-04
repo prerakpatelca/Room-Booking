@@ -83,23 +83,23 @@
 		    	</p>
                 <p class="d-flex">
                     <span>Last Name</span>
-                    <span>$0.00</span>
+                    <span>{{ session('lastname') }}</span>
                 </p>
                 <p class="d-flex">
                     <span>Credit Card</span>
-                    <span>$0.00</span>
+                    <span>{{ session('creditcard') }}</span>
                 </p>
-                <hr>
+                
                 <p class="d-flex total-price">
                     <span>Expiry Date</span>
-                    <span>${{ session('grandtotal') }}</span>
+                    <span>${{ session('expirydate') }}</span>
                 </p>
 
                 <p class="d-flex total-price">
                     <span>Email Address</span>
-                    <span>${{ session('grandtotal') }}</span>
+                    <span>${{ session('emailaddress') }}</span>
                 </p>
-
+                <hr>
 	            <h3 class="billing-heading mb-4">Cart Total</h3>
 	          	<p class="d-flex">
                     <span>Subtotal</span>
