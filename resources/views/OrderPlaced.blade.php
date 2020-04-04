@@ -30,8 +30,6 @@
           <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-              <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
-
             </ul>
           </div>
         </div>
@@ -103,7 +101,7 @@
 	          	<div class="row align-items-end">
 	          		<div class="col-md-6">
 	                <div class="form-group">
-	                	<label for="firstname">Firt Name</label>
+	                	<label for="firstname">First Name</label>
 	                  <input type="text" class="form-control" required>
 	                </div>
 	              </div>
@@ -113,8 +111,6 @@
 	                  <input type="text" class="form-control" required>
 	                </div>
                 </div>
-                <div class="w-100"></div>
-		            
 		            <div class="col-md-6">
 		            	<div class="form-group">
 	                	<label for="streetaddress">Credit Card Number</label>

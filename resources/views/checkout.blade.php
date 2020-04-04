@@ -97,40 +97,38 @@
                     <span>${{ $grandtotal }}</span>
                 </p>
 		    </div>
-            <form action="#" class="billing-form">
+            <form action="{{ route('CheckoutController.store') }}" class="billing-form">
                 <br>
 				<h3 class="mb-4 billing-heading">Billing Details</h3>
 	          	<div class="row align-items-end">
 	          		<div class="col-md-6">
 	                <div class="form-group">
-	                	<label for="firstname">Firt Name</label>
-	                  <input type="text" class="form-control" required>
+	                	<label for="firstname">First Name</label>
+                        <input name="firstname" type="text" class="form-control" required>
 	                </div>
 	              </div>
 	              <div class="col-md-6">
 	                <div class="form-group">
 	                	<label for="lastname">Last Name</label>
-	                  <input type="text" class="form-control" required>
+	                  <input name="lastname" type="text" class="form-control" required>
 	                </div>
                 </div>
-                <div class="w-100"></div>
-		            
 		            <div class="col-md-6">
 		            	<div class="form-group">
-	                	<label for="streetaddress">Credit Card Number</label>
-	                    <input type="number" class="form-control" required>
+	                	<label for="creditcard">Credit Card Number</label>
+	                    <input name="creditcard" type="number" class="form-control" required>
 	                </div>
 		            </div>
 		            <div class="col-md-6">
 		            	<div class="form-group">
-                        <label for="streetaddress">Expiry Date</label>
-	                    <input type="text" class="form-control" required>
+                        <label for="expirydate">Expiry Date</label>
+	                    <input name="expirydate" type="text" class="form-control" required>
 	                </div>
 		            </div>
 	                <div class="col-md-6">
 	                    <div class="form-group">
                             <label for="emailaddress">Email Address</label>
-                            <input type="email" class="form-control" required>
+                            <input name="emailaddress" type="email" class="form-control" required>
 	                    </div>
                     </div>
                     <div class="w-100">
