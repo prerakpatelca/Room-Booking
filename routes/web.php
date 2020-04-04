@@ -57,6 +57,6 @@ Route::get('mail',function(){
 
 Route::get('goback',function(){
 
-    return App::make('Products')->index();
+    return App::make('CheckoutController')->index();
     
 })->name('goback');
