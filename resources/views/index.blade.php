@@ -22,17 +22,14 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Mohawk Cart</a>
-          <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-              <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
-
+          <a class="navbar-brand" href="{{ route('products.index') }}">Mohawk Cart</a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item active"><a href="{{ route('products.index') }}" class="nav-link">Home</a></li>
             </ul>
           </div>
         </div>
-      </nav>
-    <!-- END nav -->
+    </nav>
 
     <section class="ftco-section">
         <div class="container">
