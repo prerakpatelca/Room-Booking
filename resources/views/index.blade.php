@@ -110,8 +110,8 @@
             </div>
             <br>
             @if(count(session('test')) > 0)
-                <p align="center"><a href="{{ route('checkout.index') }}" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
-                <p align="center"><a href="{{ route('goback') }}" class="btn btn-primary py-3 px-4">Empty your Cart</a></p>
+                <p align="center"><a href="{{ route('checkout.index') }}" class="btn btn-primary py-3 px-4">Proceed to Checkout</a>
+                <a href="{{ route('goback') }}" class="btn btn-primary py-3 px-4">Empty your Cart</a></p>
             @else
                 <p align="center">Your cart is empty!</p>
             @endif
