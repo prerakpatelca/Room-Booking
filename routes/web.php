@@ -23,7 +23,7 @@ Route::resource('checkout', 'CheckoutController');
 
 Route::get('mail',function(){
     try{
-        Mail::to("patelprerak14@gmail.com")->send(new OrderPlaced());
+        Mail::to(session('emailaddress'))->send(new OrderPlaced());
     }
     catch (Exception $e)
     {
