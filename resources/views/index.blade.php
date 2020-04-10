@@ -72,7 +72,7 @@
                                             <h3>{{ $cart->name }}</h3>
                                         </td>
                                         
-                                        <td class="price">{{ $cart->price }}</td>
+                                        <td class="price">${{ $cart->price }}</td>
                                         <td class="price">{{ $cart->quantity }}</td>       
                                         <td class="total">${{ $cart->total }}</td>
                                     </tr>
