@@ -1,4 +1,24 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+http://tranquil-wave-85134.herokuapp.com/rooms
+
+# About Project
+All create, update, read and delete operations on the database tables is done using Laravel's Eloquent ORM. The rooms page presents a table of hotel rooms in a professional looking Bootstrap table. The table of hotel rooms is stored in Postgres database, and a hotel room consists of the following fields from the perspective of the user: room number, room name, room description, max occupancy. The rooms page allows the user to delete rooms by clicking a
+"delete" link in each row of the table. When the user clicks on a delete link, both the hotel room, and any bookings associated with that room, is deleted. The bookings page presents a table of bookings in a professional looking Bootstrap table. The table of bookings is stored in Postgres database, and a booking consists of the following feilds from the perspective of the user: room number, room name, guest name, date. Date can be a single day. Use primary/foreign keys to relate the rooms and bookings tables in the expected way (but the user is not able see these keys or know they exist). User has been given the ability to create new bookings using a web form that appears at the top of the page. User has been given the ability to delete bookings using a "delete" link in each row of the table.
+
+# Languages and Tools used
+    - Laravel
+    - Heroku
+    - Heroku Postgres database
+    - Heroku adminium for tracking entries
+ 
+ # Learning Objectives
+    - Host an application using Heroku
+    - Create a CRUD web app with Laravel
+    - Create views with Blade template engine
+    - Use Eloquent CRM to interact with database
+    - Use sessions with Laravel with a database to store session data
+    - Use Mailgun to send email with Laravel
+
+<p align="center"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
